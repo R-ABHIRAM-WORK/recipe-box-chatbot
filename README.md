@@ -48,7 +48,7 @@ CLI commands inside chat: `/state` (inspect active session filters), `/reset`, `
 ```bash
 python -m src.run_evals
 ```
-Generates updated `eval/demo_conversations.md`, `eval/eval_report.md`, and `eval/eval_results.json` (including 6 multi-turn conversations and 2 side-by-side one-shot LLM comparisons).
+Generates updated `eval/demo_conversations.md`, `eval/eval_report.md`, and `eval/eval_results.json` (including 7 multi-turn conversations and 2 side-by-side one-shot LLM comparisons).
 
 ---
 
@@ -118,7 +118,7 @@ User Turn ─▶ RecipeAgent (src/agent.py)
 │   ├── normalizer.py      # Conservative ingredient/quantity parser & step splitter
 │   ├── build_db.py        # Offline ETL builder for data/recipes.db
 │   ├── tools.py           # 5 deterministic SQL/Python tools (search, detail, stats, pantry, substitution)
-│   ├── llm_client.py      # Zero-dependency OpenRouter / OpenAI-compatible client with model fallback
+│   ├── llm_client.py      # Zero-dependency multi-provider client (Gemini / Groq / OpenRouter)
 │   ├── agent.py           # Multi-turn RecipeAgent + Python SessionState + grounding prompt
 │   ├── chat.py            # Interactive CLI chatbot
 │   ├── verify_db.py       # Quick DB sanity & latency benchmark
@@ -130,7 +130,7 @@ User Turn ─▶ RecipeAgent (src/agent.py)
 │   └── eval_results.json
 ├── .env.example
 ├── .gitignore
-├── AI_BRIEF.md            # Summary of design discussions, data audit, and walkthrough map
+├── AI_BRIEF.md            # Summary of AI-assisted design discussions and engineering iterations
 └── README.md
 ```
 
