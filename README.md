@@ -130,6 +130,7 @@ User Turn ─▶ RecipeAgent (src/agent.py)
 │   └── eval_results.json
 ├── .env.example
 ├── .gitignore
+├── AI_BRIEF.md            # Summary of design discussions, data audit, and walkthrough map
 └── README.md
 ```
 
@@ -137,4 +138,4 @@ User Turn ─▶ RecipeAgent (src/agent.py)
 
 ## AI Tools Disclosure
 
-AI coding assistance (Antigravity) was used collaboratively for code scaffolding, regex/normalization edge-case debugging, SQLite indexing optimization, and drafting test harnesses and documentation. All architectural decisions (SQLite schema, conservative two-level normalization, deterministic tool separation, hard-constraint handling, and evaluation criteria) were reviewed, audited against the real dataset, and verified end-to-end.
+AI coding assistance (Antigravity) was used collaboratively for code scaffolding, regex/normalization edge-case debugging, SQLite indexing optimization, and drafting test harnesses and documentation. All architectural decisions (SQLite schema, conservative two-level normalization, deterministic tool separation, hard-constraint handling, and evaluation criteria) were reviewed, audited against the real dataset, and verified end-to-end. See [`AI_BRIEF.md`](AI_BRIEF.md) for a concise summary of the design discussion and iterations.
