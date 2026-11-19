@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Environment & secrets
+.env
+
+# Assignment prompt PDF
+*.pdf
+
+# Large dataset & built local database (reproducible via download_data.py & build_db.py)
+data/raw/
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/*.db.tmp
